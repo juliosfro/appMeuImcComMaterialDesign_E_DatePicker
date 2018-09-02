@@ -91,9 +91,7 @@ public class TelaCadastrarPessoaController extends AppCompatActivity {
             }
         });
 
-        _imgButtonDataNascimento.setOnClickListener(new View.OnClickListener()
-
-        {
+        _imgButtonDataNascimento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Calendar cal = Calendar.getInstance();
@@ -109,9 +107,7 @@ public class TelaCadastrarPessoaController extends AppCompatActivity {
             }
         });
 
-        _DateSetListner = new DatePickerDialog.OnDateSetListener()
-
-        {
+        _DateSetListner = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 month = month + 1;
@@ -133,13 +129,9 @@ public class TelaCadastrarPessoaController extends AppCompatActivity {
                 }
 
             }
-        }
+        };
 
-        ;
-
-        _btnSalvarAlterar.setOnClickListener(new View.OnClickListener()
-
-        {
+        _btnSalvarAlterar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -180,9 +172,7 @@ public class TelaCadastrarPessoaController extends AppCompatActivity {
             }
         });
 
-        _btnLimpar.setOnClickListener(new View.OnClickListener()
-
-        {
+        _btnLimpar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 limpar();
